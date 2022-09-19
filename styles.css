@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  background-color: #373737;
+  font-family: arial;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  width: 250px;
+  height: 300px;
+  border-radius: 0.5em;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px black;
+  padding: 10px 10px;
+  align-items: center;
+}
+
+.header {
+  font-size: 1.25rem;
+}
+
+.close-btn {
+  border: none;
+  background-color: white;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+
+.text {
+  display: flex;
+  height: 200px;
+  width: 250px;
+  overflow: auto;
+  padding: 10px;
+  font-size: 0.75rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  height: 50px;
+  border-top: solid 1px black;
+}
+
+.click {
+  background-color: none;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 0.5em;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.btn-ok {
+  background-color: hsl(100, 80%, 60%);
+}
+
+.btn-cancel {
+  background-color: hsl(22, 87%, 60%);
+}
+
+.btn-ok:hover,
+.btn-ok:focus {
+  background-color: hsl(100, 80%, 60%);
+  box-shadow: 0 0 5px 0 hsl(100, 100%, 40%);
+}
+
+.btn-cancel:hover,
+.btn-cancel:focus {
+  background-color: hsl(22, 87%, 60%);
+  box-shadow: 0 0 5px 0 hsl(22, 87%, 40%);
+}
